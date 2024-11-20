@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const { MongoClient, ServerApiVersion } = require('mongodb');
-
+// test
 // MongoDB URI
 const uri = "mongodb+srv://jayalexandertrevino:jay123mongodb@photographycluster.w9dev.mongodb.net/?retryWrites=true&w=majority&appName=PhotographyCluster";
 

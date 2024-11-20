@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Home from './components/Home';
+import Home from './components/Home'; // Ensure this is where the game is going
 import Portfolio from './components/Portfolio';
 import Blog from './components/Blog';
 
@@ -13,13 +12,15 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/portfolio" data-text="photography">photography</Link>
             </li>
             <li>
-              <Link to="/portfolio">Portfolio</Link>
+              <Link to="/">
+                <img src="/signature.png" alt="jay trevino" style={{ width: '100px', height: '50px' }} />
+              </Link>
             </li>
             <li>
-              <Link to="/blog">Blog</Link>
+              <Link to="/blog" data-text="writing">writing</Link>
             </li>
           </ul>
         </nav>
@@ -35,3 +36,4 @@ function App() {
 }
 
 export default App;
+

@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Home from './components/Home'; // Ensure this is where the game is going
+import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import Blog from './components/Blog';
 
@@ -36,4 +36,3 @@ function App() {
 }
 
 export default App;
-
